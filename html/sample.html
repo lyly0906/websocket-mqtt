@@ -70,7 +70,7 @@
     function onSubmit() {
       var input = document.getElementById("input");
       // You can send message to the Web Socket using ws.send.
-      ws.send(input.value);
+      ws.send(input.value+"#");
       output("send: " + input.value);
       input.value = "";
       input.focus();

@@ -42,7 +42,15 @@ wss.on('connection', function(ws) {
     //ws.send('你是第' + wss.clients.length + '位');  
     // 发送消息  
     ws.on('message', function(jsonStr,flags) { 
-		//console.log(typeof jsonStr); 
+		console.log(jsonStr.indexOf("#")); 
+		if(jsonStr.indexOf("#") > 0){
+			jsonStr = jsonStr.replace(/[a-z]+/ig,"");
+			console.log(jsonStr); 
+			jsonStr = jsonStr.replace("#",""); 
+			if(jsonStr.length == 0){
+				jsonStr = 1;
+			}
+		}
 		var obj = eval('(' + jsonStr + ')');
 		console.log(typeof obj);
 		if(typeof obj == "object" && typeof obj != "undefined"){
