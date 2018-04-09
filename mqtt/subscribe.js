@@ -2,10 +2,6 @@ var WebSocket = require('ws');
 var mqtt = require('mqtt');  
 
 
-var WebSocket = require('ws');
-var mqtt = require('mqtt');  
-
-
 
 var client2 = mqtt.connect("mqtt://192.168.2.117:1883");  
   
