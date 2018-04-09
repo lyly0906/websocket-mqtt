@@ -1,0 +1,17 @@
+{
+  "name": "mqtt",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mosca": "",
+    "socket.io": "^2.0.4",
+    "ws": "^3.2.0",
+	"mqtt": ""
+  },
+  "keywords": [
+    "mqtt"
+  ],
+  "author": "lyly0906",
+  "license": "ISC"
+}
